@@ -1,0 +1,411 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1D63BBA6-86D2-4805-8FC6-E4AACE340523}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>图书馆管理系统</RootNamespace>
+    <AssemblyName>图书馆管理系统</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdmin.Designer.cs">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm-Isbn-Read-Book.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm-Isbn-Read-Book.Designer.cs">
+      <DependentUpon>frm-Isbn-Read-Book.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStatistical.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStatistical.Designer.cs">
+      <DependentUpon>frmStatistical.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSetup.Designer.cs">
+      <DependentUpon>frmSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateAdmin.Designer.cs">
+      <DependentUpon>frmUpdateAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateBook.Designer.cs">
+      <DependentUpon>frmUpdateBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateRead.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateRead.Designer.cs">
+      <DependentUpon>frmUpdateRead.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateBookID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateBookID.Designer.cs">
+      <DependentUpon>frmUpdateBookID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddBookSort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddBookSort.Designer.cs">
+      <DependentUpon>frmAddBookSort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrintReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrintReport.Designer.cs">
+      <DependentUpon>frmPrintReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegisteredRead.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegisteredRead.Designer.cs">
+      <DependentUpon>frmRegisteredRead.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearch.Designer.cs">
+      <DependentUpon>frmSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateSort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateSort.Designer.cs">
+      <DependentUpon>frmUpdateSort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LibraryDataSet.cs">
+      <DependentUpon>LibraryDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LibraryDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LibraryDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="frmPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPayment.Designer.cs">
+      <DependentUpon>frmPayment.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmAdmin.resx">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm-Isbn-Read-Book.resx">
+      <DependentUpon>frm-Isbn-Read-Book.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStatistical.resx">
+      <DependentUpon>frmStatistical.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSetup.resx">
+      <DependentUpon>frmSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateAdmin.resx">
+      <DependentUpon>frmUpdateAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateBook.resx">
+      <DependentUpon>frmUpdateBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateRead.resx">
+      <DependentUpon>frmUpdateRead.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateBookID.resx">
+      <DependentUpon>frmUpdateBookID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddBookSort.resx">
+      <DependentUpon>frmAddBookSort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrintReport.resx">
+      <DependentUpon>frmPrintReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegisteredRead.resx">
+      <DependentUpon>frmRegisteredRead.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearch.resx">
+      <DependentUpon>frmSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateSort.resx">
+      <DependentUpon>frmUpdateSort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportBookPenalty.rdlc" />
+    <EmbeddedResource Include="frmPayment.resx">
+      <DependentUpon>frmPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportBookDamage.rdlc" />
+    <EmbeddedResource Include="ReportReadLogout.rdlc" />
+    <None Include="app.config" />
+    <None Include="LibraryDataSet.xsc">
+      <DependentUpon>LibraryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LibraryDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LibraryDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LibraryDataSet.xss">
+      <DependentUpon>LibraryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{29FBC40B-E860-42E2-9F45-48F9A7ED2A1D}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{6D3D665B-9E14-41CF-8D9C-33ABB2578BB2}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{9FE691DE-53EE-4638-B52E-A5F6B47A67EA}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\上一页.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\下一页.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\修改.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\添加.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\删除.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\刷新.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\查询.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\续借.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\归还.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\搜索Info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\注销.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\退出.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\搜索.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\读者查询.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\借阅查询.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\用户注销.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\缴费.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\统计.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\图书馆.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\借阅管理.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\系统.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\图书类别.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\图书管理.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\读者管理.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\查询管理.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\打印管理.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\设置.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\管理员管理.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\视图.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\类别添加.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\类别修改.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\类别删除.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\读者search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\查询图书.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\系统管理.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
