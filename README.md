@@ -17,12 +17,13 @@
     *读者借阅
     *读者续借
     *查询借阅信息
-*罚款
+* 罚款
     *超期罚款
     *丢失罚款
     *损坏罚款
-*统计信息
-*搜索
+* 统计信息
+* 搜索
+
 ##联系方式
 
 * 邮件(1837157245#qq.com, 把#换成@)
@@ -33,7 +34,6 @@
 ```javascript
   var Show = {
     Name : "兰剑诚",
-    Site : "http://lanjiancheng.name"
-    
+    Site : "http://lanjiancheng.name"    
   }
 ```
