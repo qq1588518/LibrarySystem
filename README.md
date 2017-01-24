@@ -38,7 +38,6 @@
 
 ```javascript
   var Show = {
-    Name : "兰剑诚",
-    Site : "http://lanjiancheng.name"    
+    Name : "兰剑诚"; 
   }
 ```
