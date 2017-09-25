@@ -1,8 +1,8 @@
 # Library-Management-System
-## 图书馆管理系统
-一个基于C#语言和sql server2008开发的系统
+## 系统
+基于C#语言和sql server2008开发
 
-## 图书馆管理系统有那些功能
+## 功能
 * 图书信息
     *  图书基本信息的`新增`
     *  图书基本信息的`修改`
@@ -28,16 +28,3 @@
 * 统计信息
 
 * 搜索
-
-## 联系方式
-
-* 邮件(islanjiancheng#gmail.com, 把#换成@)
-* QQ: 1837157245
-
-## 关于作者
-
-```javascript
-  var Show = {
-    Name : "兰剑诚"; 
-  }
-```
